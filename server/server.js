@@ -12,7 +12,7 @@ const port = process.env.PORT || 80;
 
 // Custom CORS configuration
 const corsOptions = {
-  origin: 'https://create-post-full-stack.vercel.app/', // Replace with your frontend domain
+  origin: 'https://create-post-full-stack-ws4c.vercel.app/', // Replace with your frontend domain
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
