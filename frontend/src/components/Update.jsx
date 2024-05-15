@@ -30,7 +30,7 @@ const Update = () => {
 async function getSingleUser() {
     try {
         
-        const response = await fetch(`http://localhost:3000/${id}`)
+        const response = await fetch(`https://create-post-full-stack.vercel.app/${id}`)
         const result = await response.json();
         if (!response.ok) {
             setError(result.error);
