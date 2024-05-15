@@ -51,7 +51,7 @@ async function getSingleUser() {
  const handleEdit = async (e) => {
     e.preventDefault();
     const userUpdate = { name, email, age };
-    const response = await fetch(`http://localhost:3000/${id}`, {
+    const response = await fetch(`https://create-post-full-stack-ws4c.vercel.app/${id}`, {
       method: "PATCH",
       body: JSON.stringify(userUpdate),
       headers: {
