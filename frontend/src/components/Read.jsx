@@ -8,7 +8,7 @@ const Read = () => {
     //Getting data from Backend-mongoDb server through req.body in json
     async function getData() {
        try {
-           const response = await fetch("https://create-post-full-stack.vercel.app/");
+           const response = await fetch("https://create-post-full-stack.vercel.app");
            const result = await response.json();
            if (!response.ok) {
                setError(result.error);
