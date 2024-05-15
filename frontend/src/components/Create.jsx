@@ -24,7 +24,7 @@ const Create = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const userEntered = { name, email, age };
-    const response = await fetch("http://localhost:3000", {
+    const response = await fetch("https://create-post-full-stack.vercel.app/", {
       method: "POST",
       body: JSON.stringify(userEntered),
       headers: {
