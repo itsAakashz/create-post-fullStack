@@ -8,7 +8,7 @@ const Read = () => {
     //Getting data from Backend-mongoDb server through req.body in json
     async function getData() {
        try {
-           const response = await fetch("http://localhost:3000");
+           const response = await fetch("https://create-post-full-stack.vercel.app/");
            const result = await response.json();
            if (!response.ok) {
                setError(result.error);
@@ -25,7 +25,7 @@ const Read = () => {
     //DELETING DATA IN MONGO AFTER CALLING DELETE FUNTION THROUGH NODE
     async function handleDelete(id) {
         try {
-            const response = await fetch(`http://localhost:3000/${id}`, {method: "DELETE"});
+            const response = await fetch(`https://create-post-full-stack.vercel.app/${id}`, {method: "DELETE"});
             const result = await response.json(); 
             if (!response.ok) {
                 setError(result.error);
