@@ -8,6 +8,13 @@ const cors =require("cors")
 // Create an Express app
 const app = express();
 const port = process.env.PORT || 3000;
+// Custom CORS configuration
+const corsOptions = {
+  origin: 'https://create-post-full-stack.vercel.app/', // Replace with your frontend domain
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
+};
 
 app.use(cors());
 
