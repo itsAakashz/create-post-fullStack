@@ -1,7 +1,7 @@
 const express = require("express");
 const { connect } = require('./db/connectionMongoDb');
 const userRoutes = require("./routes/userRoutes");
-const allowCors = require('./path/to/allowCors');
+const allowCors = require('./allowCors');
 const cors = require("cors");
 
 // Create an Express app
