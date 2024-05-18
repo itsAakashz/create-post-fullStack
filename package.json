@@ -9,15 +9,14 @@
     "dev": "concurrently \"npm run start\" \"npm run frontend\""
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "concurrently": "^5.3.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.10.9",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "tailwindcss": "^2.0.2"
+    "flowbite": "^2.3.0",
+"flowbite-react": "^0.9.0",
+"react": "^18.2.0",
+"react-dom": "^18.2.0",
+"react-router-dom": "^6.23.1"
+"cors": "^2.8.5",
+"express": "^4.17.1",
+"mongodb": "^3.6.3",
+"mongoose": "^8.3.4",
   }
 }
